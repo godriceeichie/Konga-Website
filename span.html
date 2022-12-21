@@ -6,10 +6,218 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+        }
+
+        .slide-section{
+            width: 800px;
+            height: 300px;
+            position: relative;
+        }
+
+        .slide-img-container, .slide-container{
+            width: 100%;
+            height: 100%;
+        }
+
+        .slide-img-container{
+            display: none;
+        }
+
+        .slide-img-container.active{
+            display: inline-block;
+        }
+
+        .slide-controls .move-icon{
+            display: none;
+            position: absolute;
+            top: 50%;
+            color: gray;
+            background-color: rgba(255, 255, 255, .5);
+            padding: .7rem;
+            border-radius: 50%;
+            transition: display 1s ease-in-out;
+            cursor: pointer;
+        }   
+
+        .slide-section:hover .move-icon{
+            display: block;
+        }
+
+        .back-icon{
+            left: 10px;
+        }
+
+        .forward-icon{
+            right: 10px;
+        }
+
+        .slide-circle-container{
+            position: absolute;
+            left: 25%;
+            right: 25%;
+            top: 95%;
+            display: flex;
+            justify-content: center;
+            gap: .5rem;
+        }
+
+        .slide-circle-container span{
+            display: inline-block;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            border: 1px solid black;
+            background-color: white;
+        }
+        .slide-circle-container span.active{
+            background-color: rgba(0,0,0,0.4);
+        }
+        .slide-circle:hover{
+            background-color: gray;
+        }
+    </style>
 </head>
 <body>
-    <i class="fa-light fa-magnifying-glass"></i>
-    
+    <div class="slide-section">
+        <div class="slide-container">
+            <div class="slide-img-container active">
+                <img class="slide" src="slide-img/KongaJara.jpg_SkDyRfPdi.jpg" alt="">
+            </div>  
+            <div class="slide-img-container">
+                <img class="slide" src="slide-img/zero-carbon.webp" alt="">
+            </div>      
+            <div class="slide-img-container">
+                <img class="slide" src="slide-img/flash-sales.jpg" alt="">
+            </div>
+            <div class="slide-img-container">
+                <img class="slide" src="slide-img/flash-sales-electronics.jpg" alt="">
+            </div>     
+            <div class="slide-img-container">
+                <img class="slide" src="slide-img/intel-deals.jpg" alt="">
+            </div>
+            <div class="slide-img-container">
+                <img class="slide" src="slide-img/game-console-deals.jpg" alt="">
+            </div>     
+            <div class="slide-img-container">
+                <img class="slide" src="slide-img/cway-deals.jpg" alt="">
+            </div>     
+            <div class="slide-img-container">
+                <img class="slide" src="slide-img/mobile-devices-deals.jpg" alt="">
+            </div>     
+        </div>
+        <div class="slide-controls">
+            <span class="material-symbols-outlined back-icon move-icon" >
+                arrow_back_ios
+            </span>
+            <span class="material-symbols-outlined forward-icon move-icon">
+                arrow_forward_ios
+            </span>
+        </div>
+        <div class="slide-circle-container">
+            
+        </div>  
+    </div>
+    <script>
+        let slides = document.querySelector(".slide-container").children
+        let backArrow = document.querySelector(".back-icon")
+        let forwardArrow = document.querySelector(".forward-icon");
+        let index = 0;
+        let indicator = document.querySelector(".slide-circle-container")
+        backArrow.addEventListener("click", function(){
+            prevSlide()
+            updateSlideIndicator()
+            resetTimer()
+        })
+        forwardArrow.addEventListener("click", function(){
+            nextSlide()
+            updateSlideIndicator()
+            resetTimer()
+        })
+        function circleIndicator(){
+            for(i = 0; i < slides.length; i++){
+                const span = document.createElement("span")
+                span.setAttribute("onclick", "indicateSlide(this)")
+                indicator.appendChild(span)
+                if(i === 0){
+                    span.className = "active"
+                }
+                span.id = i;
+            }
+        }
+
+        function indicateSlide(element){
+            index = element.id;
+            changeSlide()
+            updateSlideIndicator()
+        }
+
+        function updateSlideIndicator(){
+            for(i = 0; i < indicator.children.length; i++){
+                indicator.children[i].classList.remove("active")
+            }
+            indicator.children[index].classList.add("active")
+        }
+        circleIndicator()
+        function prevSlide(){
+            if(index === 0){
+                index = 7;
+            }
+            else{
+                index--
+            }
+            changeSlide()
+        }
+        function nextSlide(){
+            if(index === slides.length - 1){
+                index = 0
+            }
+            else{
+                index++
+            }
+            console.log(index);
+            changeSlide()
+        }
+
+        function changeSlide(){
+            for(i = 0; i < slides.length; i++){
+                slides[i].classList.remove("active")
+            }
+            slides[index].classList.add("active")
+        }
+
+        function resetTimer(){
+            clearInterval(timer)
+            let timer = setInterval(autoPlay, 4000)
+        }
+
+        function autoPlay(){
+            nextSlide()
+            updateSlideIndicator()
+        }
+
+        let timer = setInterval(autoPlay, 4000)
+        window.onload = "autoPlay()"
+    </script>
 </body>
 </html>
