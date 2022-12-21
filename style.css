@@ -33,6 +33,7 @@ img{
 }
 
 .konga-companies{
+    display: none;
     background-color: rgb(246,246,246);
     padding-block: 1rem;
 }
@@ -48,4 +49,11 @@ img{
 
 .konga-companies-container>div{
     width: 100px;
+}
+
+/* For tablet view */
+@media screen and (min-width: 650px){
+    .konga-companies{
+        display: block;
+    }
 }
