@@ -31,3 +31,21 @@ img{
     max-width: 100%;
     display: inline-block;
 }
+
+.konga-companies{
+    background-color: rgb(246,246,246);
+    padding-block: 1rem;
+}
+
+.konga-companies-container{
+    width: 90%;
+    max-width: 1000px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.konga-companies-container>div{
+    width: 100px;
+}
