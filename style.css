@@ -51,10 +51,42 @@ img{
     width: 100px;
 }
 
+.mobile-nav{
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: .75rem;
+    /* background-color: red; */
+}
+
+.logo-container .menu-icon{
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.logo{
+    display: inline-block;
+    width: 85px;
+}
+
+.mobile-nav-icons{
+    display: flex;
+    gap: .8rem;
+}
+
 /* For tablet view */
 @media screen and (min-width: 650px){
     .konga-companies{
         display: block;
+    }
+
+    .show{
+        display: none;
     }
 }
 
