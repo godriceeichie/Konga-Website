@@ -30,5 +30,27 @@ a{
 img{
     max-width: 100%;
     display: inline-block;
+    height: auto;
 }
 
+.mobile-header-nav{
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    padding-block: .75rem;
+}
+
+.mobile-header-nav-first-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-header-nav-first-section>div{
+    display: flex;
+    gap: 1rem;
+}
+
+.mobile-konga-logo{
+    width: 5.3125rem;
+}
