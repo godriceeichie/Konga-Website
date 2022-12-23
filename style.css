@@ -98,7 +98,7 @@ header{
     background-color: transparent;
 }
 
-@media screen and (min-width: 650px){
+@media screen and (min-width: 768px){
     .mobile-header-nav{
         display: none;
     }
