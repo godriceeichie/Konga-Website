@@ -33,6 +33,13 @@ img{
     height: auto;
 }
 
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
 .mobile-header-nav{
     width: 90%;
     margin-inline: auto;
@@ -89,4 +96,10 @@ img{
     border: none;
     outline: none;
     background-color: transparent;
+}
+
+@media screen and (min-width: 650px){
+    .mobile-header-nav{
+        display: none;
+    }
 }
