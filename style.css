@@ -98,8 +98,28 @@ header{
     background-color: transparent;
 }
 
+#konga-companies{
+    background-color: #f6f6f6;
+    display: none;
+    text-align: center;
+    width: 100%;
+    padding: .53312rem;
+}
+
+#konga-companies img{
+    max-height: 1.12rem;
+    max-width: 6.25rem;
+    margin-right: 3.25rem;
+    text-indent:  -624.9375rem;
+}
+
 @media screen and (min-width: 768px){
     .mobile-header-nav{
         display: none;
+    }
+
+    #konga-companies{
+        background-color: #f6f6f6;
+        display: inline-block;
     }
 }
