@@ -48,9 +48,20 @@ img{
 
 .mobile-header-nav-first-section>div{
     display: flex;
+    align-items: center;
     gap: 1rem;
 }
 
 .mobile-konga-logo{
     width: 5.3125rem;
+}
+
+.shopping-cart-icon{
+    color: #50545b;
+}
+
+.store-icon{
+    color: #50545b;
+    height: 1.875rem;
+    transform: scale(.8)
 }
