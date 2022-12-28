@@ -33,93 +33,11 @@ img{
     height: auto;
 }
 
-header{
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-.mobile-header-nav{
-    width: 90%;
-    margin-inline: auto;
-    display: flex;
-    flex-direction: column;
-    padding-block: .75rem;
-    gap: .5rem;
-}
-
-.mobile-header-nav-first-section{
-    display: flex;
-    justify-content: space-between;
-}
-
-.mobile-header-nav-first-section>div{
-    display: flex;
-    align-items: center;
-    gap: .75rem;
-}
-
-.hamburger-icon{
-    height: 1.875rem;
-}
-
-.hamburger-icon path{
-    fill: currentColor;
-}
-
-.mobile-konga-logo{
-    width: 5.3125rem;
-}
-
-.shopping-cart-icon{
-    color: #50545b;
-}
-
-.store-icon{
-    color: #50545b;
-    height: 1.875rem;
-    transform: scale(.8)
-}
-
-.searchbar-container{
-    display: flex;
-    align-items: center;
-    background-color: #e8e8e8;
-    border-radius: .1875rem;
-    padding: .75rem;
-}
-
-#search{
+.wrapper{
     width: 100%;
-    height: 100%;
-    border: none;
-    outline: none;
-    background-color: transparent;
-}
-
-#konga-companies{
-    background-color: #f6f6f6;
-    display: none;
-    text-align: center;
-    width: 100%;
-    padding: .53312rem;
-}
-
-#konga-companies img{
-    max-height: 1.12rem;
-    max-width: 6.25rem;
-    margin-right: 3.25rem;
-    text-indent:  -624.9375rem;
-}
-
-@media screen and (min-width: 768px){
-    .mobile-header-nav{
-        display: none;
-    }
-
-    #konga-companies{
-        background-color: #f6f6f6;
-        display: inline-block;
-    }
+    min-height: 100vh;
+    background-image: url(/img/body-background-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: red;
 }
