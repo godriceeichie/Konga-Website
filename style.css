@@ -35,6 +35,10 @@ img{
     height: auto;
 }
 
+svg{
+    vertical-align: middle;
+}
+
 .wrapper{
     width: 100%;
     min-height: 100vh;
@@ -48,11 +52,85 @@ img{
     display: none;
 }
 
+.mobile-navbar{
+    background-color: white;
+    position: fixed;
+    z-index: 150;
+    top: 0;
+    width: 100%;
+    /* There was a top value of 2.5rem though */
+}
+
+.mobile-navbar-container{
+    box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 5%);
+    padding: .625rem .9375rem;
+}
+
+.mobile-navbar-menu{
+    display: block;
+}
+
+.hamburger-toggle-btn{
+    display: inline-block;
+    margin-right: 0.625rem;
+}
+
+.hamburger-toggle-btn svg{
+    height: 1.875rem;
+}
+
+.hamburger-toggle-btn svg path{
+    fill: currentColor;
+}
+
+.konga-logo-container{
+    display: inline-block;
+    max-height: 1.5rem;
+    vertical-align: middle;
+}
+
+.konga-logo-container{
+    margin-top: 0.0625rem;
+    width: 5.3125rem;
+}
+
+.shopping-info-container{
+    float: right;
+}
+
+.shopping-info-container a{
+    display: inline-block;
+    position: relative;
+    text-align: right;
+    width: 2.1875rem;
+}
+
+.shopping-info-container svg{
+    color: #50545b;
+    height: 1.875rem;
+}
+
+.shopping-store svg{
+    transform: scale(.8);
+    vertical-align: middle;
+}
+
+.shopping-store svg path{
+    fill: currentColor;
+}
+
+.shopping-info-container a:last-of-type{
+    margin-right: 0.3125rem;
+}
+
+.shopping-info-container a:last-of-type path{
+    fill: currentColor;
+}
 @media screen and (min-width: 768px) {
     .mobile-navbar{
         display: none;
     }
-    
+
     .konga-companies-section{
         background-color: #f6f6f6;
         display: inline-block;
