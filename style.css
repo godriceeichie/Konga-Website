@@ -16,6 +16,7 @@ body{
     min-height: 100vh;
     font-family: 'Segoe UI', Arial, Geneva, Verdana, sans-serif;
     font-size: 1rem;
+    color: #1c1d1f;
 }
 
 ul{
@@ -24,7 +25,8 @@ ul{
 
 a{
     text-decoration: none;
-    color: black;
+    color: inherit;
+    cursor: pointer;
 }
 
 img{
@@ -39,5 +41,30 @@ img{
     background-image: url(/img/body-background-image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: red;
+    /* background-color: red; */
+}
+
+.konga-companies-section{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .konga-companies-section{
+        background-color: #f6f6f6;
+        display: inline-block;
+        padding: 0.53312rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .konga-companies-link{
+        max-height: 1.125rem;
+    }
+    
+    .konga-companies-img{
+        max-height: 1.125rem;
+        margin-right: 3.125rem;
+        max-width: 6.125rem;
+        text-indent: -624.9375rem;
+    }
 }
