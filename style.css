@@ -17,6 +17,8 @@ body{
     font-family: 'Segoe UI', Arial, Geneva, Verdana, sans-serif;
     font-size: .8125rem;
     color: #1c1d1f;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 ul{
@@ -247,5 +249,207 @@ svg{
         margin-right: 3.125rem;
         max-width: 6.125rem;
         text-indent: -624.9375rem;
+    }
+
+    .main-pc-navbar-container{
+        background-color: #ed017f;
+        overflow-x: hidden;
+    }
+
+    .main-pc-navbar{
+        background-color: #ed017f;
+        color: #4a4a4a;
+        height: 3.75rem;
+        margin: 0 auto;
+        max-width: 90rem;
+        padding-inline: 2vw;
+        display: flex;
+        align-items: center;
+    }
+
+    .main-pc-navbar>a{
+        margin-right: 3vw;
+        height: 2.1875rem;
+    }
+
+    .main-pc-navbar>a>img{
+        max-height: 2.1875rem;
+        width: auto;
+    }
+
+    .main-pc-navbar__items-container{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-box-align: center;
+    }
+
+    .main-pc-navbar__link{
+        color: #fff;
+        font-size: .8125rem;
+        padding: .9375rem;
+        transition: background-color .3s ease-in-out;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-pc-navbar__link:hover:not(.main-pc-navbar__help>a){
+        color: #ed017f;
+    }
+
+    .main-pc-navbar__link:hover{
+        background-color: white;
+    }
+
+    .main-pc-navbar__sell-on-konga{
+        margin-left: auto;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-pc-navbar__sell-on-konga>div{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-pc-searchbar-wrapper{
+        -webkit-box-flex: 1;
+        flex-grow: 1;
+    }
+
+    .main-pc-searchbar-container{
+        width: 100%;
+    }
+
+    .main-pc-searchbar-container form{
+        max-width: 40vw;
+        background-color: #fff;
+        border-radius: 0.25rem;
+        margin-inline: auto;
+        position: relative;
+        width: 37.5rem;
+        display: flex;
+    }
+
+    .main-pc-searchbar-container form>div{
+        height: 2.1875rem;
+        position: relative;
+        width: 100%;
+    }
+
+    .main-pc-searchbar-container form input{
+        border-bottom-left-radius: 0.25rem;
+        border-top-left-radius: 0.25rem;
+        font-size: .75rem;
+        height: 100%;
+        padding-inline: 0.625rem;
+        width: 100%;
+        border: none;
+        outline: none;
+    }
+
+    .main-pc-searchbar-container form>div svg{
+        display: none;
+    }
+
+    .main-pc-searchbar-container button{
+        background-color: #fba100;
+        border-bottom-right-radius: .25rem;
+        border-top-right-radius: .25rem;
+        color: #ed017f;
+        outline: none;
+        width: 2.1825rem;
+        font-weight: 600;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-pc-searchbar-container button svg{
+        height: 0.6875rem;
+        vertical-align: middle;
+    }
+
+    .main-pc-searchbar-container button svg path{
+        fill: #fff;
+    }
+
+    .main-pc-navbar__help{
+        display: flex;
+        height: 100%;
+        position: relative;
+    }
+
+    .main-pc-navbar__help:hover .main-pc-navbar__link svg path{
+        fill: #ed017f;
+        stroke: #ed017f;
+    }
+
+    .main-pc-navbar__help .main-pc-navbar__link:hover{
+        color: #ed017f;
+    }
+
+    .main-pc-navbar__help .question-mark{
+        margin-right: 0.3125rem;
+        vertical-align: middle;
+    }
+
+    .main-pc-navbar__help .expand-more{
+        margin-left: 0.3125rem;
+    }
+
+    .main-pc-navbar__help .question-mark path, .main-pc-navbar__help .expand-more path{
+        fill: #fff;
+        stroke: #fff;
+    }
+
+    .main-pc-navbar__login{
+        height: 100%;
+        margin-right: .4375rem;
+    }
+
+    .user-shopping-info{
+        background-color: #33b27b;
+        border-radius: 0.125rem;
+        height: 2.5rem;
+        padding: 0.9375rem 1.25rem;
+        transition: background-color 300ms ease-in-out;
+        color: white;
+        font-size: .8125rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .user-shopping-info:hover{
+        background-color: #2d9e6d;
+    }
+
+    .user-shopping-info svg{
+        margin-right: 0.3125rem;
+    }
+
+    .user-shopping-info svg path{
+        fill: #fff;
+        stroke: #fff;
+    }
+
+    .product-number{
+        background-color: white;
+        border-radius: 0.125rem;
+        color: black;
+        font-size: .8125rem;
+        font-weight: 600;
+        margin-left: 0.5rem;
+        padding: 0.1875rem 0.375rem;
     }
 }
