@@ -279,6 +279,10 @@ svg{
         text-indent: -624.9375rem;
     }
 
+    .pc-navbar-wrapper{
+        display: block;
+    }
+
     .main-pc-navbar-container{
         background-color: #ed017f;
         overflow-x: hidden;
@@ -514,6 +518,10 @@ svg{
     .product-category:hover{
         background-color: white;
         color: #2e2e2e;
+    }
+
+    .mobile-product-categories-container{
+        display: none;
     }
 }
 
