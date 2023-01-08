@@ -191,6 +191,26 @@ svg{
     display: none;
 }
 
+
+.mobile-product-categories-container{
+    background-color: white;
+    padding: 6.875rem 0 0.625rem;
+    display: flex;
+}
+
+.mobile-product-category{
+    color: #50545b;
+    display: inline-block;
+    font-size: .75rem;
+    text-align: center;
+    width: 20%;
+}
+
+.mobile-product-category svg{
+    display: block;
+    margin: 0 auto 0.125rem;
+}
+
 .pc-navbar-wrapper{
     display: none;
 }
@@ -198,6 +218,7 @@ svg{
 .product-categories-container{
     display: none;
 }
+
 @media screen and (min-width: 577px){
     .mobile-searchbar input{
         padding-right: .625rem;
