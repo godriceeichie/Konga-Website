@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
 </head>
 <body>
     <div class="wrapper">
@@ -195,54 +197,59 @@
             </nav>
         </div>
         <main>
-            <section class="hero" style="background-color: red;">
+            <section class="hero">
                 <div class="hero__container">
-                    <div class="hero__carousel">
-                        <button class="hero__carousel-button"></button>
-                        <div class="hero__carousel-track-container">
-                            <ul class="hero__carousel-track">
-                                <li class="hero__carousel-slide">
-                                    <img src="img/first-section-img/Shopping-spree-img.jpeg" alt="">
-                                </li>
-                                <li class="hero__carousel-slide">
-                                    <img src="img/first-section-img/Flash-deals-img.jpeg" alt="">
-                                </li>
-                                <li class="hero__carousel-slide">
-                                    <img src="img/first-section-img/New-year-deals.jpeg" alt="">
-                                </li>
-                                <li class="hero__carousel-slide">
-                                    <img src="img/first-section-img/Back-to-work-img.jpeg" alt="">
-                                </li>
-                                <li class="hero__carousel-slide">
-                                    <img src="img/first-section-img/amazing-intel-deals-img.jpeg" alt="">
-                                </li>
-                                <li class="hero__carousel-slide">
-                                    <img src="img/first-section-img/Back-to-school-img.jpeg" alt="">
-                                </li>
-                                <li class="hero__carousel-slide">
-                                    <img src="img/first-section-img/Zero-carbon-deals-img.jpeg" alt="">
-                                </li>
-                                <li class="hero__carousel-slide">
-                                    <img src="img/first-section-img/Everyday-deals-img.jpeg" alt="">
-                                </li>
-                                <li class="hero__carousel-slide">
-                                    <img src="img/first-section-img/Home&Kitchen-img.jpg" alt="">
-                                </li>
-                            </ul>
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide">
+                            <img class="carousel-img" src="img/first-section-img/Shopping-spree-img.jpeg" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img class="carousel-img" src="img/first-section-img/Flash-deals-img.jpeg" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img class="carousel-img" src="img/first-section-img/New-year-deals.jpeg" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img class="carousel-img" src="img/first-section-img/Back-to-work-img.jpeg" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img class="carousel-img" src="img/first-section-img/amazing-intel-deals-img.jpeg" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img class="carousel-img" src="img/first-section-img/Back-to-school-img.jpeg" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img class="carousel-img" src="img/first-section-img/Zero-carbon-deals-img.jpeg" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img class="carousel-img" src="img/first-section-img/Everyday-deals-img.jpeg" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img class="carousel-img" src="img/first-section-img/Home&Kitchen-img.jpg" alt="">
+                          </div>
+                          
                         </div>
-                        <button class="hero__carousel-button"></button>
-                        <div class="hero__carousel-nav">
-                            <button class="carousel-indicator"></button>
-                            <button class="carousel-indicator"></button>
-                            <button class="carousel-indicator"></button>
-                            <button class="carousel-indicator"></button>
-                            <button class="carousel-indicator"></button><button class="carousel-indicator"></button><button class="carousel-indicator"></button><button class="carousel-indicator"></button><button class="carousel-indicator"></button>
-                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                      
+                        <!-- If we need navigation buttons -->
+                        <svg height="79" viewBox="0 0 79 79" width="79" aria-label="Previous slide" class="swiper-button-prev" name="left-arrow"><defs><circle cx="28.5" cy="28.5" id="b" r="28.5"></circle><filter filterUnits="objectBoundingBox" height="161.4%" id="a" width="161.4%" x="-30.7%" y="-27.2%"><feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset><feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5.5"></feGaussianBlur><feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.238337862 0"></feColorMatrix></filter></defs><g fill="none" fill-rule="evenodd"><g transform="matrix(-1 0 0 1 68 9)"><use fill="#000" filter="url(#a)" xlink:href="#b"></use><use fill="#FFF" xlink:href="#b"></use></g><path d="M42.326 46.316a.668.668 0 0 0 0-.9L34.92 37.51l7.406-7.924a.668.668 0 0 0 0-.899.568.568 0 0 0-.84 0l-7.812 8.358a.671.671 0 0 0 0 .9l7.812 8.356a.556.556 0 0 0 .84.016z" fill="#7E859B" fill-rule="nonzero" stroke="#7E859B" stroke-width="3"></path></g></svg>
+                        <svg height="79" viewBox="0 0 79 79" width="79" aria-label="Next slide" class="swiper-button-next" name="right-arrow"><defs><circle cx="28.5" cy="28.5" r="28.5"></circle><filter filterUnits="objectBoundingBox" height="161.4%" width="161.4%" x="-30.7%" y="-27.2%"><feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset><feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5.5"></feGaussianBlur><feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.238337862 0"></feColorMatrix></filter></defs><g fill="none" fill-rule="evenodd"><g transform="translate(11 9)"><use fill="#000" filter="url(#a)" xlink:href="#b"></use><use fill="#FFF" xlink:href="#b"></use></g><path d="M36.674 46.316a.668.668 0 0 1 0-.9l7.406-7.907-7.406-7.924a.668.668 0 0 1 0-.899.568.568 0 0 1 .84 0l7.812 8.358a.671.671 0 0 1 0 .9l-7.812 8.356a.556.556 0 0 1-.84.016z" fill="#7E859B" fill-rule="nonzero" stroke="#7E859B" stroke-width="3"></path></g></svg>
+                      
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
                     </div>
                 </div>
+                <!-- <div>
+                    <h1>Hello world</h1>
+                </div> -->
             </section>
         </main>
     </div>
-    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
