@@ -233,21 +233,39 @@ main{
     max-width: 1000px;
     margin-inline: auto;
     border-radius: 8px;
-    height: 175px;
-    max-height: 300px;
+    max-height: 500px;
+    /* background-color: red; */
+}
+
+.hero__carousel{
+    height: 50%;
+}
+
+.swiper{
+    height: 100%;
+}
+
+.carousel-img{
+    width: 100%;
+    height: 100%;
+    border-radius: .325rem;
 }
 
 .current-slide{
     background-color: #3f3f3f;
 } 
 
-.swiper .swiper-pagination-bullet-active{
+.swiper .swiper-pagination-bullet-active, .swiper .swiper-pagination-bullet{
     border-radius: 50%;
     width: 0.625rem;
     height: 0.625rem;
     border: .0625rem solid #4a4a4a;
     outline: none;
     transition: opacity .15s cubic-bezier(.4,0,1,1);
+    background: #3f3f3f;
+}
+
+.swiper .swiper-pagination-bullet{
     background: white;
 }
 

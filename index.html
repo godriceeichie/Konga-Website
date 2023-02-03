@@ -198,51 +198,89 @@
         </div>
         <main>
             <section class="hero">
-                <div class="hero__container">
-                    <div class="swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                          <!-- Slides -->
-                          <div class="swiper-slide">
-                            <img class="carousel-img" src="img/first-section-img/Shopping-spree-img.jpeg" alt="">
-                          </div>
-                          <div class="swiper-slide">
-                            <img class="carousel-img" src="img/first-section-img/Flash-deals-img.jpeg" alt="">
-                          </div>
-                          <div class="swiper-slide">
-                            <img class="carousel-img" src="img/first-section-img/New-year-deals.jpeg" alt="">
-                          </div>
-                          <div class="swiper-slide">
-                            <img class="carousel-img" src="img/first-section-img/Back-to-work-img.jpeg" alt="">
-                          </div>
-                          <div class="swiper-slide">
-                            <img class="carousel-img" src="img/first-section-img/amazing-intel-deals-img.jpeg" alt="">
-                          </div>
-                          <div class="swiper-slide">
-                            <img class="carousel-img" src="img/first-section-img/Back-to-school-img.jpeg" alt="">
-                          </div>
-                          <div class="swiper-slide">
-                            <img class="carousel-img" src="img/first-section-img/Zero-carbon-deals-img.jpeg" alt="">
-                          </div>
-                          <div class="swiper-slide">
-                            <img class="carousel-img" src="img/first-section-img/Everyday-deals-img.jpeg" alt="">
-                          </div>
-                          <div class="swiper-slide">
-                            <img class="carousel-img" src="img/first-section-img/Home&Kitchen-img.jpg" alt="">
-                          </div>
-                          
+                <section class="hero__container">
+                    <div class="hero__carousel">
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                              <!-- Slides -->
+                              <div class="swiper-slide">
+                                <picture class="carousel-img">
+                                    <source class="carousel-img" media="(max-width: 600px)" srcset="img/slide-img/valbanner-600px.jpg" sizes="">
+                                    <source class="carousel-img" media="(max-width: 799px)" srcset="img/slide-img/valbanner-600px.jpg" sizes="">
+                                    <img src="img/slide-img/valbannerDefault.jpg" alt="" class="carousel-img">
+                                </picture>
+                              </div>
+                              <div class="swiper-slide">
+                                <picture class="carousel-img">
+                                    <source media="(max-width: 600px)" class="carousel-img" srcset="img/slide-img/flash-sales-600px.jpg" sizes="">
+                                    <source media="(max-width: 799px)" class="carousel-img" srcset="img/slide-img/flash-sales-799px.jpg" sizes="">
+                                    <img src="img/slide-img/flash-salesDefaultjpg.jpg" alt="" class="carousel-img">
+                                </picture>
+                              </div>
+                              <div class="swiper-slide">
+                                <picture class="carousel-img">
+                                    <source media="(max-width: 600px)" class="carousel-img" srcset="img/slide-img/samsungphone-600px.webp" sizes="">
+                                    <source media="(max-width: 799px)" class="carousel-img" srcset="img/slide-img/samsungphone-799px.webp" sizes="">
+                                    <img src="img/slide-img/samsungphoneDefault.webp" class="carousel-img" alt="">
+                                </picture>
+                              </div>
+                              <div class="swiper-slide">
+                                <picture class="carousel-img">
+                                    <source media="(max-width: 600px)" class="carousel-img" srcset="img/slide-img/Intel-600px.jpg" sizes="">
+                                    <source media="(max-width: 799px)" class="carousel-img" srcset="img/slide-img/Intel-799px.jpg" sizes="">
+                                    <img src="img/slide-img/IntelDefault.jpg" class="carousel-img" alt="">
+                                </picture>
+                              </div>
+                              <div class="swiper-slide">
+                                <picture class="carousel-img">
+                                    <source media="(max-width: 600px)" class="carousel-img" srcset="img/slide-img/Games-console-600px.jpg" sizes="">
+                                    <source media="(max-width: 799px)" class="carousel-img" srcset="img/slide-img/Games-console-799px.jpg" sizes="">
+                                    <img src="img/slide-img/Games-consoleDefault.jpg" class="carousel-img" alt="">
+                                </picture>
+                              </div>
+                              <div class="swiper-slide">
+                                <picture class="carousel-img">
+                                    <source media="(max-width: 600px)" class="carousel-img" srcset="img/slide-img/PayDay-600px.jpg" sizes="">
+                                    <source media="(max-width: 799px)" class="carousel-img" srcset="img/slide-img/PayDay-799px.jpg" sizes="">
+                                    <img src="img/slide-img/PayDay-799px.jpg" class="carousel-img" alt="">
+                                </picture>
+                              </div>
+                              <div class="swiper-slide">
+                                <picture class="carousel-img">
+                                    <source media="(max-width: 600px)" class="carousel-img" srcset="img/slide-img/everyday-deals-600px.jpg" sizes="">
+                                    <source media="(max-width: 799px)" class="carousel-img" srcset="img/slide-img/everyday-deals-799px.jpg" sizes="">
+                                    <img src="img/slide-img/everyday-dealsDefault.jpg" class="carousel-img" alt="">
+                                </picture>
+                              </div>
+                              <div class="swiper-slide">
+                                <picture class="carousel-img">
+                                    <source media="(max-width: 600px)" class="carousel-img" srcset="img/slide-img/Phones-600px.jpg" sizes="">
+                                    <source media="(max-width: 799px)" class="carousel-img" srcset="img/slide-img/Phones-799px.jpg" sizes="">
+                                    <img src="img/slide-img/PhonesDefault.jpg" class="carousel-img" alt="">
+                                </picture>
+                              </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                        
+                            <!-- If we need navigation buttons -->
+                            <svg height="79" viewBox="0 0 79 79" width="79" aria-label="Previous slide" class="swiper-button-prev" name="left-arrow"><defs><circle cx="28.5" cy="28.5" id="b" r="28.5"></circle><filter filterUnits="objectBoundingBox" height="161.4%" id="a" width="161.4%" x="-30.7%" y="-27.2%"><feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset><feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5.5"></feGaussianBlur><feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.238337862 0"></feColorMatrix></filter></defs><g fill="none" fill-rule="evenodd"><g transform="matrix(-1 0 0 1 68 9)"><use fill="#000" filter="url(#a)" xlink:href="#b"></use><use fill="#FFF" xlink:href="#b"></use></g><path d="M42.326 46.316a.668.668 0 0 0 0-.9L34.92 37.51l7.406-7.924a.668.668 0 0 0 0-.899.568.568 0 0 0-.84 0l-7.812 8.358a.671.671 0 0 0 0 .9l7.812 8.356a.556.556 0 0 0 .84.016z" fill="#7E859B" fill-rule="nonzero" stroke="#7E859B" stroke-width="3"></path></g></svg>
+                            <svg height="79" viewBox="0 0 79 79" width="79" aria-label="Next slide" class="swiper-button-next" name="right-arrow"><defs><circle cx="28.5" cy="28.5" r="28.5"></circle><filter filterUnits="objectBoundingBox" height="161.4%" width="161.4%" x="-30.7%" y="-27.2%"><feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset><feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5.5"></feGaussianBlur><feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.238337862 0"></feColorMatrix></filter></defs><g fill="none" fill-rule="evenodd"><g transform="translate(11 9)"><use fill="#000" filter="url(#a)" xlink:href="#b"></use><use fill="#FFF" xlink:href="#b"></use></g><path d="M36.674 46.316a.668.668 0 0 1 0-.9l7.406-7.907-7.406-7.924a.668.668 0 0 1 0-.899.568.568 0 0 1 .84 0l7.812 8.358a.671.671 0 0 1 0 .9l-7.812 8.356a.556.556 0 0 1-.84.016z" fill="#7E859B" fill-rule="nonzero" stroke="#7E859B" stroke-width="3"></path></g></svg>
+                        
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-scrollbar"></div>
                         </div>
-                        <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
-                      
-                        <!-- If we need navigation buttons -->
-                        <svg height="79" viewBox="0 0 79 79" width="79" aria-label="Previous slide" class="swiper-button-prev" name="left-arrow"><defs><circle cx="28.5" cy="28.5" id="b" r="28.5"></circle><filter filterUnits="objectBoundingBox" height="161.4%" id="a" width="161.4%" x="-30.7%" y="-27.2%"><feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset><feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5.5"></feGaussianBlur><feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.238337862 0"></feColorMatrix></filter></defs><g fill="none" fill-rule="evenodd"><g transform="matrix(-1 0 0 1 68 9)"><use fill="#000" filter="url(#a)" xlink:href="#b"></use><use fill="#FFF" xlink:href="#b"></use></g><path d="M42.326 46.316a.668.668 0 0 0 0-.9L34.92 37.51l7.406-7.924a.668.668 0 0 0 0-.899.568.568 0 0 0-.84 0l-7.812 8.358a.671.671 0 0 0 0 .9l7.812 8.356a.556.556 0 0 0 .84.016z" fill="#7E859B" fill-rule="nonzero" stroke="#7E859B" stroke-width="3"></path></g></svg>
-                        <svg height="79" viewBox="0 0 79 79" width="79" aria-label="Next slide" class="swiper-button-next" name="right-arrow"><defs><circle cx="28.5" cy="28.5" r="28.5"></circle><filter filterUnits="objectBoundingBox" height="161.4%" width="161.4%" x="-30.7%" y="-27.2%"><feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset><feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5.5"></feGaussianBlur><feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.238337862 0"></feColorMatrix></filter></defs><g fill="none" fill-rule="evenodd"><g transform="translate(11 9)"><use fill="#000" filter="url(#a)" xlink:href="#b"></use><use fill="#FFF" xlink:href="#b"></use></g><path d="M36.674 46.316a.668.668 0 0 1 0-.9l7.406-7.907-7.406-7.924a.668.668 0 0 1 0-.899.568.568 0 0 1 .84 0l7.812 8.358a.671.671 0 0 1 0 .9l-7.812 8.356a.556.556 0 0 1-.84.016z" fill="#7E859B" fill-rule="nonzero" stroke="#7E859B" stroke-width="3"></path></g></svg>
-                      
-                        <!-- If we need scrollbar -->
-                        <div class="swiper-scrollbar"></div>
                     </div>
-                </div>
+                    <!-- <div class="hero-grid-container">
+                        <div>
+                            <img src="img/hero-grid-img/product-of-the-week-img.gif" alt="">
+                        </div>
+                        <div><img src="" alt=""></div>
+                        <div><img src="" alt=""></div>
+                        <div><img src="" alt=""></div>
+                    </div> -->
+                </section>
                 <!-- <div>
                     <h1>Hello world</h1>
                 </div> -->
