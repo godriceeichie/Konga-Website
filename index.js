@@ -39,7 +39,17 @@ const swiper = new Swiper('.swiper', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-  
+
+    transition: {
+      name: 'carousel-animation',
+      duration: 300,
+      easing: 'ease-in-out'
+    },
+
+    scrollbar: {
+      el: '.swiper-scollbar',
+      hide: true,
+    },
   });
 
     
