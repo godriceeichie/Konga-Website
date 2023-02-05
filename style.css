@@ -360,6 +360,67 @@ main{
     padding-bottom: 0.1875rem;
 }
 
+.today-product{
+    margin-left: 0;
+    margin-top: .625rem;
+    box-shadow: 0 0 0.5rem rgb(0 0 0 / 5%);
+    flex-shrink: 0;
+    width: calc(50% - 0.9375rem);
+    float: left;
+    background-color: white;
+}
+
+.today-product>a{
+    display: block;
+    height: 11.875rem;
+    padding: 0.9375rem;
+    position: relative;
+    width: 100%;
+    transition: box-shadow .4s ease-in-out;
+}
+
+.today-product>a{
+    box-shadow: 0 0.25rem 0.5rem 0 rgb(0 0 0 / 12%), 0 0.125rem 0.25rem 0 rgb(0 0 0 / 8%);
+}
+
+.today-product-info>h3{
+    font-size: .8125rem;
+    font-weight: 500;
+    height: 1.25rem;
+    margin: 0.3125rem 0 0.625rem;
+    white-space: normal;
+}
+
+.today-product-price{
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    line-height: 1.25rem;
+    justify-content: start;
+}
+
+.today-product-price>.main-price{
+    font-size: .875rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.today-product-price>.main-price>span, .today-product-price>span:nth-child(2)>span{
+    font-family: sans-serif;
+    margin-right: 1px;
+}
+
+.today-product-price>span:nth-child(2){
+    font-size: .625rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-overflow: hidden;
+    margin-left: 0.3125rem;
+    opacity: .7;
+    text-decoration: line-through;       
+}
+
 @media screen and (min-width: 577px){
     .mobile-searchbar input{
         padding-right: .625rem;
@@ -404,6 +465,20 @@ main{
     .today-deals-heading>a{
         font-size: .8125rem;
         margin-left: 2.875rem;
+    }
+
+    .today-product-price>.main-price{
+        font-size: 1rem;
+    }
+
+    .today-product-price>span:nth-child(2){
+        font-size: .75rem;    
+    }
+
+    .today-product{
+        margin-left: 1.25rem;
+        width: calc(50% - 1.875rem);
+        margin-top: 0.9375rem;
     }
 }
 
@@ -699,6 +774,23 @@ main{
     
     .today-deals-container{
         display: none;
+    }
+
+    .today-product-info>h3{
+        font-size: .9375rem;
+        height: 1.875rem;   
+    }
+
+    .today-product-price{
+        font-size: 1.25rem;
+    }
+    
+    .today-product-price>.main-price{
+        font-size: 1.25rem;
+    }
+
+    .today-product-price>span:nth-child(2){
+        font-size: .875rem;    
     }
 }
 
