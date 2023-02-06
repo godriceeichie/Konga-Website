@@ -897,6 +897,7 @@ main{
     }
 
     .pc-today-products-container{
+        display: block;
         padding: 0 0 0.3125rem;
         background-color: white;
         border-radius: 0 0 0.3125rem 0.3125rem;
@@ -917,6 +918,70 @@ main{
         width: calc(33.33333% - 0.9375rem);
         box-shadow: 0 0 0.5rem rgb(0 0 0 / 5%);
         background-color: white;
+    }
+
+    .pc-today-product>a{
+        height: 9.0625rem;
+        display: flex;
+        align-items: center;
+        padding: 0.9375rem;
+        position: relative;
+        width: 100%;
+        transition: box-shadow .4s ease-in-out,-webkit-box-shadow .4s ease-in-out;
+    }
+
+    .pc-today-product>a:hover{
+        box-shadow: 0 0.25rem 0.5rem 0 rgb(0 0 0 / 12%), 0 0.125rem 0.25rem 0 rgb(0 0 0 / 8%);
+
+    }
+
+    .pc-today-product__img{
+        padding-right: 0.625rem;
+        height: 6.25rem;
+    }
+
+    .pc-today-product__img>img{
+        display: block;
+        height: 100%;
+        margin-inline: auto;
+        width: auto;
+        max-width: 100%;
+    }
+
+    .pc-today-product-info>h3{
+        font-size: .9375rem;
+        font-weight: 400;
+        height: 1.875rem;
+        margin: 0.3125rem 0 0.625rem;
+    }
+
+    .pc-today-product-price{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        vertical-align: middle;
+        line-height: 1.25rem;
+        font-size: 1.25rem;
+    }
+
+    .pc-today-product-price>.main-price{
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+
+    .pc-today-product-price>.main-price>span{
+        font-family: sans-serif;
+        margin-right: 1px;
+    }
+
+    .pc-today-product-info>span:nth-child(2) {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin-left: 0.3125rem;
+        opacity: .7;
+        text-decoration: line-through;
+        font-size: .875rem;
     }
 }
 
@@ -970,6 +1035,8 @@ main{
     .pc-today-product{
         float: left;
     }
+
+    
 }
 
 @media screen and (min-width: 1300px){
