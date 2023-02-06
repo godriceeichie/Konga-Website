@@ -255,6 +255,7 @@ main{
 .swiper-slide{
     margin-inline: auto;
     text-align: center;
+    display: block;
 }
 
 .swiper .swiper-pagination-bullet-active, .swiper .swiper-pagination-bullet{
@@ -465,6 +466,11 @@ main{
     margin-left: 0.3125rem;
     opacity: .7;
     text-decoration: line-through;       
+}
+
+.pc-today-products-container{
+    display: none;
+    margin: 0.9375rem auto;
 }
 
 @media screen and (min-width: 577px){
@@ -850,6 +856,68 @@ main{
     .today-product-img{
         height: 12.5rem;
     }
+
+    .pc-today-products-container{
+        margin: 0.9375rem auto;
+    }
+
+    .pc-today-deals-heading{
+        display: block;
+        margin: 0.9375rem auto;
+        background: #94004f url(img/today-deals-bg.webp) no-repeat;
+        border-radius: 0.3125rem 0.3125rem 0 0;
+        height: 2.5rem;
+        margin-top: 0.9375rem;
+        padding: 0 0.625rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .pc-today-deals-heading>h2{
+        color: #fff;
+        font-size: 1.25rem;
+        letter-spacing: .03125rem;
+        margin-bottom: 0;
+        margin-top: 0;
+        max-width: 70%;
+    }
+
+    .pc-today-deals-heading>h2>span{
+        font-size: 2rem;
+    }
+
+    .pc-today-deals-heading>a{
+        display: inline-block;
+        font-size: .8125rem;
+        font-weight: 500;
+        letter-spacing: .03125rem;
+        margin-left: 2.875rem;
+        padding-bottom: 0.1875rem;
+        color: white;
+    }
+
+    .pc-today-products-container{
+        padding: 0 0 0.3125rem;
+        background-color: white;
+        border-radius: 0 0 0.3125rem 0.3125rem;
+    }
+
+    .pc-today-products-list{
+        font-weight: 400;
+        overflow: hidden;
+    }
+
+    .pc-today-products-list::before{
+        content: '';
+        display: table;
+    }
+
+    .pc-today-product{
+        margin: 0.46875rem;
+        width: calc(33.33333% - 0.9375rem);
+        box-shadow: 0 0 0.5rem rgb(0 0 0 / 5%);
+        background-color: white;
+    }
 }
 
 @media screen and (min-width: 992px){
@@ -888,26 +956,32 @@ main{
         margin-top: 1.25rem;
         padding: 0 0.9375rem;
     }
+
+    .swiper-slide>section{
+        margin-bottom: -0.3125rem;
+    }
+
+    .pc-today-deals-heading{
+        height: 3.125rem;
+        margin-top: 1.25rem;
+        padding: 0 0.9375rem;
+    }
+
+    .pc-today-product{
+        float: left;
+    }
 }
 
 @media screen and (min-width: 1300px){
     .product-categories{
         justify-content: center;
     }
-
-    .hero__container{
-        width: 70%;
-        margin-inline: auto;
-        border-radius: 8px;
-        height: 300px;
-        /* flex-direction: row; */
-    }
     
-    .hero__carousel{
+    /* .hero__carousel{
         width: 65%;
         height: 100%;
         position: relative;
-    }
+    } */
 
     .hero__images-section>a{
         padding: 0.625rem;
