@@ -373,7 +373,7 @@ main{
 .today-product>a{
     display: block;
     height: 11.875rem;
-    padding: 0.9375rem;
+    padding: 0.9375rem 0.625rem;
     position: relative;
     width: 100%;
     transition: box-shadow .4s ease-in-out;
@@ -381,6 +381,34 @@ main{
 
 .today-product>a{
     box-shadow: 0 0.25rem 0.5rem 0 rgb(0 0 0 / 12%), 0 0.125rem 0.25rem 0 rgb(0 0 0 / 8%);
+}
+
+.discount-badge{
+    background-color: #ff3b3b;
+    border-bottom-right-radius: 4.0625rem;
+    border-top-right-radius: 4.0625rem;
+    color: #fff;
+    display: inline-block;
+    font-size: .625rem;
+    font-weight: 600;
+    left: 0;
+    padding: 0.5rem 0.5rem 0.625rem;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 0.625rem;
+    z-index: 9;
+}
+
+.today-product-img{
+    height: 6.25rem;
+}
+
+.today-product-img img{
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    width: auto;
 }
 
 .today-product-info>h3{
@@ -479,6 +507,10 @@ main{
         margin-left: 1.25rem;
         width: calc(50% - 1.875rem);
         margin-top: 0.9375rem;
+    }
+
+    .today-product>a{
+        padding: 0.9375rem;
     }
 }
 
@@ -791,6 +823,14 @@ main{
 
     .today-product-price>span:nth-child(2){
         font-size: .875rem;    
+    }
+
+    .today-product>a{
+        height: 20.9375rem;
+    }
+
+    .today-product-img{
+        height: 12.5rem;
     }
 }
 
