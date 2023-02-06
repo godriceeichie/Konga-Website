@@ -458,14 +458,8 @@ main{
 }
 
 .today-product-price>span:nth-child(2){
-    font-size: .625rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    text-overflow: hidden;
-    margin-left: 0.3125rem;
-    opacity: .7;
-    text-decoration: line-through;       
+    font-size: .75rem;
+        
 }
 
 .pc-today-products-container{
@@ -974,14 +968,34 @@ main{
         margin-right: 1px;
     }
 
-    .pc-today-product-info>span:nth-child(2) {
+    .pc-today-product-price>.former-price{
+        font-size: .875rem;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+        text-overflow: hidden;
         margin-left: 0.3125rem;
         opacity: .7;
-        text-decoration: line-through;
-        font-size: .875rem;
+        text-decoration: line-through; 
+    }
+
+    .amount-saved{
+        font-size: .75rem;
+        font-weight: 600;
+        color: #33b27b;
+        display: block;
+        margin: 0.125rem 0;
+    }
+
+    .amount-saved>span{
+        font-family: sans-serif;
+        margin-right: 1px;
+    }
+
+    .amount-saved-container>div{
+        margin-top: 0.625rem;
+        display: flex;
+        justify-content: space-between;
     }
 }
 
