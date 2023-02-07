@@ -462,7 +462,7 @@ main{
         
 }
 
-.pc-today-products-container{
+.pc-today-deals-container{
     display: none;
     margin: 0.9375rem auto;
 }
@@ -855,6 +855,10 @@ main{
         margin: 0.9375rem auto;
     }
 
+    .pc-today-deals-container{
+        display: block;
+    }
+
     .pc-today-deals-heading{
         display: block;
         margin: 0.9375rem auto;
@@ -903,6 +907,12 @@ main{
     }
 
     .pc-today-products-list::before{
+        content: '';
+        display: table;
+    }
+
+    .pc-today-products-list::after{
+        clear: both;
         content: '';
         display: table;
     }
